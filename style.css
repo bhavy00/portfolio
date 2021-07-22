@@ -1,0 +1,161 @@
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+    color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #06191d;
+
+}
+
+body::-webkit-scrollbar{
+    width: 0.5vw;
+}
+
+body::-webkit-scrollbar-track{
+    background: #f8253e;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #06191d;
+    
+}
+
+
+.main{
+    margin-left: 150px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+}
+
+h1{
+    color: #f8253e;
+    font-size: 7vw;
+    margin: 0;
+    padding-top: 20vw;
+    padding-bottom: 2vw;
+}
+
+#intro h1{
+    color: white;
+    font-size: 10vw;
+    margin: 0;
+    padding-top: 5vw;
+}
+
+#navbar .logo{
+    width: 10vw;
+    height: 10vw;
+}
+
+#navbar{
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    background-color: black;
+    padding-top: 20px;
+}
+
+#navbar .link{
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    border-top: 2px solid rgba(225,225,225,0.1) ;
+}
+
+#navbar .link:last-child{
+    border-bottom: 2px solid rgba(225,225,225,0.1) ;
+}
+
+#navbar .link:hover{
+    background-color: #f8253e;
+}
+
+#navbar .social{
+    width: 2vw;
+    height: 2vw;
+    padding: 20px 5px;
+}
+
+
+
+p{
+    margin: 0;
+    font-size: 2vw;
+}
+
+#skillone::-webkit-progress-bar{
+    height: 5px;
+    background-color: blueviolet;
+
+}
+
+.project{
+    width: 10vw;
+    height: 10vw;
+}
+
+.info input{
+    display: flex;
+    width: 50%;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 2px solid rgba(225,225,225,0.1);
+}
+
+.message textarea{
+    height: 50px;
+    resize: none;
+}
+
+.info button{
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px 20px;
+
+}
+
+.info button:hover{
+    background-color: #f8253e;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main{
+        margin-left: 0;
+        padding: 0 5vw
+    }
+
+    #navbar {
+       display: none;
+        
+    }
+
+    
+    p{
+        font-size: 3vw;
+    }
+
+    .info input{
+        width: 80%;
+    }
+
+    .project{
+        width: 20vw;
+        height: 20vw;
+    }
+}
